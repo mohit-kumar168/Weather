@@ -27,7 +27,7 @@
                 </a>
 
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#" id="delhi">Delhi</a></li>
+                  <li><a class="dropdown-item" href="#" id="london">London</a></li>
                   <li><a class="dropdown-item" href="#" id="seattle">Seattle</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#" id="bangalore">Bangalore</a></li>
@@ -58,12 +58,11 @@
                 <h4 class="my-0 fw-normal">Tempratures</h4>
               </div>
               <div class="card-body">
-                <h1 class="card-title pricing-card-title"><span class="temp"></span><small class="text-body-secondary fw-light"><span>&#8451;</span></small></h1>
+                <h1 class="card-title pricing-card-title"><span class="temp"></span><small class="text-body-secondary fw-light"><span></span></small></h1>
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>Temprature is <span class="temp"></span><span>&#8451;</span></li>
-                  <li>Min Temprature is <span class="min_temp"></span><span>&#8451;</span></li>
-                  <li>Max Temprature is <span class="max_temp"></span><span>&#8451;</span></li>
-                  <li>Sea Level is <span class="sea_level"></span> ASL</li>
+                  <li>Min Temprature is <span class="min_temp"></span><span></span></li>
+                  <li>Max Temprature is <span class="max_temp"></span><span></span></li>
+                  <li>Sea Level is <span class="sea_level"></span></li>
                 </ul>
               </div>
             </div>
@@ -74,12 +73,11 @@
                 <h4 class="my-0 fw-normal">Humidity Info</h4>
               </div>
               <div class="card-body">
-                <h1 class="card-title pricing-card-title"><span class="humidity"></span><small class="text-body-secondary fw-light"> %</small></h1>
+                <h1 class="card-title pricing-card-title"><span class="humidity"></span><small class="text-body-secondary fw-light"></small></h1>
                 <ul class="list-unstyled mt-3 mb-4">
-                  <li>Feels Like <span class="feels_like"></span><span>&#8451;</span></li>
-                  <li>Pressure is <span class="pressure"></span> hPa</li>
-                  <li>Humidity is <span class="humidity"></span>%</li>
-                  <li>Visibility is <span class="visibility"></span> m</li>
+                  <li>Feels Like <span class="feels_like"></span><span></span></li>
+                  <li>Pressure is <span class="pressure"></span></li>
+                  <li>Visibility is <span class="visibility"></span></li>
                 </ul>
               </div>
             </div>
@@ -90,12 +88,11 @@
                 <h4 class="my-0 fw-normal">Sun/Wind Info</h4>
               </div>
               <div class="card-body">
-                <h1 class="card-title pricing-card-title"><span class="wind_speed"></span><small class="text-body-secondary fw-light"> km/hr</small></h1>
+                <h1 class="card-title pricing-card-title"><span class="wind_speed"></span><small class="text-body-secondary fw-light"></small></h1>
                 <ul class="list-unstyled mt-3 mb-4">
                   <li>Sunrise <span class="sunrise"></span></li>
                   <li>Sunset <span class="sunset"></span></li>
-                  <li>Wind Speed is <span class="wind_speed"></span>m/s</li>
-                  <li>Wind Degree is <span class="wind_degree"></span>&deg;</li>
+                  <li>Wind Degree is <span class="wind_degree"></span></li>
                 </ul>
               </div>
             </div>
@@ -115,67 +112,67 @@
                 <th style="width: 10%;">Max temp</th>
                 <th style="width: 10%;">Pressure</th>
                 <th style="width: 10%;">Humidity</th>
-                <th style="width: 10%;">Sunrise</th>
-                <th style="width: 10%;">Sunset</th>
                 <th style="width: 10%;">Wind speed</th>
                 <th style="width: 10%;">Wind degrees</th>
+                <th style="width: 10%;">Sunrise</th>
+                <th style="width: 10%;">Sunset</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row" class="text-start">Shanghai</th>
-                <td class="temp">1</td>
-                <td class="feels_like">1</td>
-                <td class="min_temp">1</td>
-                <td class="max_temp">1</td>
-                <td class="pressure">1</td>
-                <td class="Humidity">1</td>
-                <td class="sunrise">1</td>
-                <td class="sunset">1</td>
-                <td class="wind_speed">1</td>
-                <td class="wind_degree">1</td>
+              <tr id="shanghai-weather">
+                <th>Shanghai</th>
+                <td><span class="temp"></span></td>
+                <td><span class="feels_like"></span></td>
+                <td><span class="min_temp"></span></td>
+                <td><span class="max_temp"></span></td>
+                <td><span class="pressure"></span></td>
+                <td><span class="humidity"></span></td>
+                <td><span class="wind_speed"></span></td>
+                <td><span class="wind_degree"></span></td>
+                <td><span class="sunrise"></span></td>
+                <td><span class="sunset"></span></td>
               </tr>
-              <tr>
-                <th scope="row" class="text-start">Boston</th>
-                <td class="temp">1</td>
-                <td class="feels_like">1</td>
-                <td class="min_temp">1</td>
-                <td class="max_temp">1</td>
-                <td class="pressure">1</td>
-                <td class="Humidity">1</td>
-                <td class="sunrise">1</td>
-                <td class="sunset">1</td>
-                <td class="wind_speed">1</td>
-                <td class="wind_degree">1</td>
+
+              <tr id="boston-weather">
+                <th>Boston</th>
+                <td><span class="temp"></span></td>
+                <td><span class="feels_like"></span></td>
+                <td><span class="min_temp"></span></td>
+                <td><span class="max_temp"></span></td>
+                <td><span class="pressure"></span></td>
+                <td><span class="humidity"></span></td>
+                <td><span class="wind_speed"></span></td>
+                <td><span class="wind_degree"></span></td>
+                <td><span class="sunrise"></span></td>
+                <td><span class="sunset"></span></td>
               </tr>
-            </tbody>
-    
-            <tbody>
-              <tr>
-                <th scope="row" class="text-start">Luknow</th>
-                <td class="temp">1</td>
-                <td class="feels_like">1</td>
-                <td class="min_temp">1</td>
-                <td class="max_temp">1</td>
-                <td class="pressure">1</td>
-                <td class="Humidity">1</td>
-                <td class="sunrise">1</td>
-                <td class="sunset">1</td>
-                <td class="wind_speed">1</td>
-                <td class="wind_degree">1</td>
+
+              <tr id="lucknow-weather">
+                <th>Lukhnow</th>
+                <td><span class="temp"></span></td>
+                <td><span class="feels_like"></span></td>
+                <td><span class="min_temp"></span></td>
+                <td><span class="max_temp"></span></td>
+                <td><span class="pressure"></span></td>
+                <td><span class="humidity"></span></td>
+                <td><span class="wind_speed"></span></td>
+                <td><span class="wind_degree"></span></td>
+                <td><span class="sunrise"></span></td>
+                <td><span class="sunset"></span></td>
               </tr>
-              <tr>
-                <th scope="row" class="text-start">Kolkata</th>
-                <td class="temp">1</td>
-                <td class="feels_like">1</td>
-                <td class="min_temp">1</td>
-                <td class="max_temp">1</td>
-                <td class="pressure">1</td>
-                <td class="Humidity">1</td>
-                <td class="sunrise">1</td>
-                <td class="sunset">1</td>
-                <td class="wind_speed">1</td>
-                <td class="wind_degree">1</td>
+
+              <tr id="kolkata-weather">
+                <th>Kolkata</th>
+                <td><span class="temp"></span></td>
+                <td><span class="feels_like"></span></td>
+                <td><span class="min_temp"></span></td>
+                <td><span class="max_temp"></span></td>
+                <td><span class="pressure"></span></td>
+                <td><span class="humidity"></span></td>
+                <td><span class="wind_speed"></span></td>
+                <td><span class="wind_degree"></span></td>
+                <td><span class="sunrise"></span></td>
+                <td><span class="sunset"></span></td>
               </tr>
             </tbody>
           </table>
